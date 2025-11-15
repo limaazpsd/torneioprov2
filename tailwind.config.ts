@@ -97,6 +97,36 @@ export default {
           "50%": {
             boxShadow: "0 0 40px hsl(193 100% 50% / 0.6)"
           }
+        },
+        "float-slow": {
+          "0%, 100%": {
+            transform: "translate(0, 0) scale(1)"
+          },
+          "33%": {
+            transform: "translate(30px, -30px) scale(1.1)"
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)"
+          }
+        },
+        "float-medium": {
+          "0%, 100%": {
+            transform: "translate(0, 0) rotate(0deg)"
+          },
+          "33%": {
+            transform: "translate(-25px, 25px) rotate(5deg)"
+          },
+          "66%": {
+            transform: "translate(25px, -15px) rotate(-5deg)"
+          }
+        },
+        "float-fast": {
+          "0%, 100%": {
+            transform: "translate(0, 0) scale(1)"
+          },
+          "50%": {
+            transform: "translate(20px, 30px) scale(1.15)"
+          }
         }
       },
       animation: {
@@ -105,6 +135,9 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "fade-in-delay": "fade-in-delay 0.8s ease-out",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        "float-slow": "float-slow 20s ease-in-out infinite",
+        "float-medium": "float-medium 15s ease-in-out infinite",
+        "float-fast": "float-fast 10s ease-in-out infinite",
       },
     },
   },
